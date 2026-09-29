@@ -94,6 +94,11 @@ const taskLinks = [
     icon : "90"
   },
   {
+    label : "Tanstack Query",
+    path : "/task-91",
+    icon : "91"
+  },
+  {
     label : "Lodash",
     path : "/task-92",
     icon : "92"

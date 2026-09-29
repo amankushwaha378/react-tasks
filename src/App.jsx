@@ -26,66 +26,52 @@ import LodashPlayground from "./components/LodashPlayground";
 import TailwindMergePlayground from "./components/TwPlayground";
 import ReactSelectPlayground from "./components/ReactSelect";
 import DateFnsPlayground from "./components/DateFnsPlayground";
+import ReactQueryLayout from "./React query/ReactQueryLayout";
 
 function App() {
-    return (
-        <Routes>
+  return (
+    <Routes>
+      <Route path="/" element={<TaskLayout />}>
+        <Route index element={<Task1 />} />
 
-            <Route path="/" element={<TaskLayout />}>
+        <Route path="task-1" element={<Task1 />} />
+        <Route path="task-2" element={<Task2 />} />
+        <Route path="task-3" element={<Task3 />} />
+        <Route path="task-4" element={<Task4 />} />
+        <Route path="task-5" element={<Task5 />} />
+        <Route path="task-6/*" element={<Task6 />} />
+        <Route path="task-7" element={<Task7 />} />
 
-                <Route index element={<Task1 />} />
+        <Route path="task-77" element={<Task77 />} />
 
-                <Route path="task-1" element={<Task1 />} />
-                <Route path="task-2" element={<Task2 />} />
-                <Route path="task-3" element={<Task3 />} />
-                <Route path="task-4" element={<Task4 />} />
-                <Route path="task-5" element={<Task5 />} />
-                <Route path="task-6/*" element={<Task6 />} />
-                <Route path="task-7" element={<Task7 />} />
+        <Route path="task-8" element={<Task8 />} />
 
-                <Route path="task-77" element={<Task77 />} />
+        <Route path="task-80/*" element={<Task80 />} />
 
-                <Route path="task-8" element={<Task8 />} />
+        <Route path="task-83/tanstack" element={<Task83Tanstack />} />
 
-                <Route path="task-80/*" element={<Task80 />} />
+        <Route path="task-83/react-window" element={<Task83ReactWindow />} />
 
-                <Route
-                    path="task-83/tanstack"
-                    element={<Task83Tanstack />}
-                />
+        <Route path="task-83/virtuoso" element={<Task83Virtuoso />} />
 
-                <Route
-                    path="task-83/react-window"
-                    element={<Task83ReactWindow />}
-                />
+        <Route path="task-84" element={<Task84 />} />
 
-                <Route
-                    path="task-83/virtuoso"
-                    element={<Task83Virtuoso />}
-                />
+        <Route path="task-9" element={<Task9 />} />
 
-                <Route path="task-84" element={<Task84 />} />
-
-                <Route path="task-9" element={<Task9 />} />
-
-                <Route path="task-88" element={<Task88/>} />
-                <Route path="task-89" element={<Task89/>} />
-                <Route path="task-90" element={<BasicTable/>} />
-                <Route path="task-92" element={<LodashPlayground/>} />
-                <Route path="task-93" element={<TailwindMergePlayground/>} />
-                <Route path="task-94" element={<ReactSelectPlayground/>} />
-                <Route path="task-95" element={<DateFnsPlayground/>} />
+        <Route path="task-88" element={<Task88 />} />
+        <Route path="task-89" element={<Task89 />} />
+        <Route path="task-90" element={<BasicTable />} />
+        <Route path="task-91/*" element={<ReactQueryLayout />}/>
+          
 
 
-
-
-
-
-
-            </Route>
-
-        </Routes>
-    );
+        <Route path="task-92" element={<LodashPlayground />} />
+        <Route path="task-93" element={<TailwindMergePlayground />} />
+        <Route path="task-94" element={<ReactSelectPlayground />} />
+        <Route path="task-95" element={<DateFnsPlayground />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App;
